@@ -21,7 +21,7 @@ exports.createShortUrl = async (req, res) => {
 
 
     res.json({
-      shortUrl: `${process.env.BASE_URL}/${shortId}`
+      shortUrl: `${process.env.BASE_URL}${shortId}`
     });
 
   } catch (err) {
